@@ -1,0 +1,115 @@
+.offerMenuItem .item-btn {
+  width: 150px;
+  font-size: 0.875rem;
+  background-color: #bd965a;
+  color: white;
+  margin: 10px 15px;
+  height: 38px;
+
+  &:hover {
+    background-color: #dbb377;
+    box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
+      0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+  }
+
+  &.active {
+    background-color: #3d3d3d;
+  }
+}
+
+.offer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.offer-description {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.offer-description-header {
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.offer-theme {
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+.list-item {
+  text-align: left;
+  margin-bottom: 7px;
+}
+
+.list-item.item {
+  margin-left: 15px;
+}
+
+.offer-list-container {
+  margin-bottom: 20px;
+}
+
+.biorezonans-photo {
+  margin: 20px 0;
+}
+
+.offer-description.priceList {
+  width: 90%;
+}
+
+.offer-theme.priceList {
+  margin: 20px 0;
+}
+
+.priceList-container {
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 720px) {
+  .offer-container {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .offerMenuItem .item-btn {
+    height: 61px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .offer-theme.priceList.title {
+    display: none;
+  }
+
+  .offer-container {
+    justify-content: center;
+    display: flex;
+  }
+
+  .faqContainer {
+    width: 70%;
+    margin: 30px auto;
+  }
+
+  .offer-description-text {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .offer-description.biorezonans {
+    display: flex;
+    margin-top: 40px;
+
+    .offer-description-text {
+      margin: 0px 100px;
+      width: 50%;
+    }
+
+    .biorezonans-photo img {
+      width: 100%;
+    }
+  }
+}
